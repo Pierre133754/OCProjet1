@@ -1,3 +1,54 @@
+/* header */
+
+body {
+    margin: 0;
+}
+
+main,footer {
+    padding: 0 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+
+header img {
+    width: 61.09px;
+    height: 19px;
+    padding: 30px 50px 30px 50px;
+    gap: 10px;
+}
+
+nav {
+    width: 344px;
+    height: 35px;
+    gap: 68px;
+    display: flex;
+    justify-content: center;
+}
+
+.THEB {
+    width: 113px;
+}
+
+.TACT {
+    width: 63px;
+}
+
+nav a {
+    display: flex;
+    align-items: flex-end;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+}
+
+/* end of header */
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -21,7 +72,6 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
 }
 
