@@ -49,6 +49,186 @@ nav a:hover {
 
 /* end of header */
 
+/* Titre et form */
+
+.recherche {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.Rtitre {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Rtitre h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.Rtitre p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Rform {
+    display: flex;
+    flex-direction: row;
+    width: 379px;
+    height: 51px;
+}
+
+.Rform label i {
+    font-size: 18px;
+    height: 18px;
+    width: 14px;
+    color: black;
+}
+
+.Rform label {
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;
+}
+
+.Rform input {
+    padding: 0;
+    border: 1px solid #F2F2F2;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    outline: 0;
+    height: 49px;
+    width: 193px;
+}
+
+.Rform input::placeholder {
+    color: black;
+}
+
+.Rform div {
+    color:white;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 132px;
+}
+
+.Rform div p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Rform div:hover {
+    cursor: pointer;
+}
+
+.Rform div i {
+    display: none;
+}
+
+.Rinfo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 24px;
+}
+
+.Rinfo p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.Rinfo i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 90px;
+    height: 22px;
+    width: 22px;
+    font-size: 10px;
+    cursor: help;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.Rfiltres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    gap: 15px;
+}
+
+.Rfiltres h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.Rfiltres div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    height: 46px;
+    padding: 0px 17.5px;
+}
+
+.Rfiltres div p {
+    font-weight: 700;
+    font-size: 17px;
+    color: black;
+    margin: 0;
+}
+
+.Rfiltres div i {
+    height: 22px;
+    width: 22px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Rfiltres div:hover {
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+/* end of titre et form */
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
