@@ -264,16 +264,21 @@ main {
     width: 30.8%;
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
-    gap: 4px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding-bottom: 15px;
+}
+
+.kard article {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .kard img {
     object-fit: cover;
-    width: 100%;
     height: 114px;
     border-radius: 20px 20px 0 0;
+    padding: 5px;
 }
 
 .kardT p {
@@ -285,7 +290,6 @@ main {
 .kardT {
     display: flex;
     flex-direction: column;
-    margin-top: 4px;
     padding: 0 15px;
     height: 64.25px;
     justify-content: space-between;
@@ -306,6 +310,89 @@ main {
 }
 
 /* end of cards */
+
+/* activites */
+
+.activites {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+.Atitre {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    height: 30px;
+}
+
+.Aligne {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Akard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.Akard img {
+    object-fit: cover;
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.Akard h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.Akard article {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* end of activites */
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.Fcol {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+    background-color: #F2F2F2;
+}
+
+.Fcol h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Fcol p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* end of footer */
 
 /****** General ***********/
 * {
