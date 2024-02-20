@@ -11,7 +11,6 @@ main,footer {
 header {
     display: flex;
     justify-content: space-between;
-    height: 79px;
 }
 
 header img {
@@ -54,8 +53,7 @@ nav a:hover {
 .recherche {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 281px;
+    gap: 35px;
 }
 
 .Rtitre {
@@ -80,7 +78,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     width: 379px;
-    height: 51px;
+    height: 49px;
 }
 
 .Rform label i {
@@ -97,8 +95,9 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 49px;
+    width: 48px;
+    min-width: 48px;
+    height: 47px;
 }
 
 .Rform input {
@@ -111,8 +110,8 @@ nav a:hover {
     font-weight: 700;
     color: black;
     outline: 0;
-    height: 49px;
-    width: 193px;
+    height: 47px;
+    width: 100%;
 }
 
 .Rform input::placeholder {
@@ -127,8 +126,9 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 49px;
-    width: 132px;
+    height: 47px;
+    width: 130px;
+    min-width: 130px;
 }
 
 .Rform div p {
@@ -143,13 +143,17 @@ nav a:hover {
 
 .Rform div i {
     display: none;
+    color: white;
+    width: 17px;
+    height: 17px;
+    font-size: 17px;
 }
 
 .Rinfo {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
-    height: 24px;
 }
 
 .Rinfo p {
@@ -193,7 +197,13 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 50px;
+    gap: 15px;
+}
+
+.Rfiltre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 15px;
 }
 
@@ -203,7 +213,7 @@ main {
     font-size: 18px;
 }
 
-.Rfiltres div {
+.RFbubs {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -214,14 +224,14 @@ main {
     padding: 0px 17.5px;
 }
 
-.Rfiltres div p {
+.Rfiltres p {
     font-weight: 700;
     font-size: 17px;
     color: black;
     margin: 0;
 }
 
-.Rfiltres div i {
+.Rfiltres i {
     height: 22px;
     width: 22px;
     font-size: 22px;
@@ -230,7 +240,7 @@ main {
     justify-content: center;
 }
 
-.Rfiltres div:hover {
+.RFbubs:hover {
     background-color: #DEEBFF;
     cursor: pointer;
 }
@@ -255,10 +265,6 @@ main {
     margin: 0;
     font-size: 18px;
     font-weight: 700;
-}
-
-.line {
-    height: 207.25px;
 }
 
 .line {
@@ -386,6 +392,7 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
+    margin-top: 5px;
 }
 
 .Fcol {
@@ -500,7 +507,7 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .populaires-cards img {
@@ -568,6 +575,11 @@ a {
 
     footer {
         gap: 30px;
+        margin-top: 5px;
+    }
+
+    .populaires-cards .card {
+        margin-top: 20px;
     }
 
     /* end of me */
@@ -606,5 +618,159 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        padding: 30px;
+    }
+
+    header nav {
+        gap: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    header nav a {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 2px #F2F2F2 solid;
+    }
+
+    header nav a:hover {
+        border-top: 0;
+        border-bottom: 2px #0065FC solid;
+    }
+
+    main,footer {
+        margin: 0;
+    }
+
+    .recherche {
+        padding: 0 20px;
+    }
+
+    .Rform div p {
+        display: none;
+    }
+
+    .Rform div i {
+        display: inline;
+    }
+
+    .Rform div {
+        border-radius: 15px;
+        width: 47px;
+        min-width: 47px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .Rform {
+        width: 100%;
+    }
+
+    .Rform input {
+        text-align: start;
+        padding-left: 23px;
+    }
+
+    .Rfiltre {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .Rfiltres {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .RFbubs p {
+        font-size: 14px;
+    }
+
+    .RFbubs {
+        width: 100%;
+    }
+
+    .Rinfo i {
+        min-width: 22px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .hebergements-and-populaires .populaires {
+        margin: 0;
+        padding: 30px 20px 30px 20px;
+        border-radius: 0;
+    }
+
+    .populaires-title i {
+        height: 15.75px;
+        width: 18px;
+        font-size: 18px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        margin-top: 15px;
+    }
+
+    .hebergements {
+        gap: 15px;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        padding: 20px;
+        background-color: white;
+    }
+
+    .line {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .kard {
+        width: 100%;
+    }
+
+    .Akard img {
+        height: 141px;
+        min-height: 141px;
+    }
+
+    .Akard div {
+        height: 59px;
+    }
+
+    .Aligne {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer {
+        margin-top: 5px;
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px;
+    }
+
+    .Fcol {
+        padding: 0;
+    }
+
 }
